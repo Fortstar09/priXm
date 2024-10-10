@@ -15,19 +15,18 @@ const navLinks = [
 export function NavBar() {
   return (
     <div className="flex justify-between items-center px-2 md:px-10 py-6 border-b border-gray-200 mb-10">
-      <div className="logo text-xl text-gray-500 font-medium">
-        pri<span className="text-2xl text-orange-500">X</span>m
-      </div>
+      <img src="/vite.svg" className="w-[50px]" alt="logo" />
+      {/* pri<span className="text-2xl text-[#FF9E6D]">X</span>m */}
       <div>
         <NavigationMenu>
           <NavigationMenuList className="flex gap-2 md:gap-4">
             {navLinks.map((link) => (
               <NavigationMenuItem
                 key={link.label}
-                className="hover:text-orange-500"
+                className="hover:text-[#FF9E6D]"
               >
                 <Link to={link.href}>
-                  <NavigationMenuLink className=" text-sm md:text-base hover:text-orange-500">
+                  <NavigationMenuLink className=" text-sm md:text-base hover:text-[#FF9E6D]">
                     {link.label}
                   </NavigationMenuLink>
                 </Link>

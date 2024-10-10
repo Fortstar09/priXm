@@ -40,9 +40,7 @@ const UploadForm = ({
   return (
     <Card className="w-[350px] md:w-[500px]">
       <CardHeader>
-        <CardTitle className="text-2xl text-orange-500">
-          Randow Rants.
-        </CardTitle>
+        <CardTitle className="text-2xl text-[#FF9E6D]">Randow Rants.</CardTitle>
         <CardDescription className="text-[12px] text-gray-400 md:max-w-[75%]">
           Let it out! Prixm is your space to freely express random thoughts,
           rants, or anything on your mind.
@@ -79,7 +77,7 @@ const UploadForm = ({
           <Button
             variant="default"
             // onClick={() => toast("Your rant has been uploaded!")}
-            className="w-full hover:bg-orange-400 bg-orange-500 text-white"
+            className="w-full hover:bg-orange-300 bg-[#FF9E6D] text-white"
           >
             Upload Rant
           </Button>

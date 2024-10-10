@@ -45,7 +45,7 @@ export default function Hero() {
           <motion.h2
             transition={transition}
             variants={variants}
-            className=" text-lg md:text-xl font-semibold mt-3 text-orange-500"
+            className=" text-lg md:text-xl font-semibold mt-3 text-[#FF9E6D]"
           >
             Hello anoyomous!
           </motion.h2>
@@ -57,7 +57,7 @@ export default function Hero() {
             {`Got something to say? Let it out! Prixm is your go-to spot for random rants, wild thoughts, and real talk. No filters, no judgment—just pure expression. Whether you're venting or vibing, someone's ready to read. Jump in, rant on!`}
           </motion.p>
           <Link to="\addrant">
-            <button className="border-orange-500 border text-orange-500 font-normal px-6 py-2 mt-6 rounded-md hover:bg-orange-500 hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            <button className="border-[#FF9E6D] border text-[#FF9E6D] font-normal px-6 py-2 mt-6 rounded-md hover:bg-[#FF9E6D] hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
               Join the Rant
             </button>
           </Link>
