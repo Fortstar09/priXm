@@ -44,26 +44,22 @@ const ViewRants = () => {
       <h2 className="text-2xl font-medium py-6">
         Home of <span className="text-orange-500">Rants.</span>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-        {isLoading ? (
-          <>
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-          </>
-        ) : (
-          <>
-            {rantData.map((rant) => (
-              <RantCard key={rant.id} message={rant.message} name={rant.name} />
-            ))}
-          </>
-        )}
-      </div>
+      {isLoading ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-6">
+          {rantData.map((rant) => (
+            <RantCard key={rant.id} message={rant.message} name={rant.name} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

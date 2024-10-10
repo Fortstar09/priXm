@@ -40,34 +40,48 @@ const UploadForm = ({
   return (
     <Card className="w-[350px] md:w-[500px]">
       <CardHeader>
-        <CardTitle className="text-xl">Rants and Bants</CardTitle>
-        <CardDescription>eXpress your Joy and Love </CardDescription>
+        <CardTitle className="text-2xl text-orange-500">
+          Randow Rants.
+        </CardTitle>
+        <CardDescription className="text-[12px] text-gray-400 md:max-w-[75%]">
+          Let it out! Prixm is your space to freely express random thoughts,
+          rants, or anything on your mind.
+        </CardDescription>
       </CardHeader>
       <form onSubmit={submitHandler}>
         <CardContent>
           <div className="grid w-full items-center gap-4">
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">Display name</Label>
-              <Input id="name" placeholder="Enter any name" ref={nameRef} />
+              <Label htmlFor="name" className="text-gray-500 font-normal">
+                Display name
+              </Label>
+              <Input
+                id="name"
+                placeholder=""
+                className=" placeholder-gray-200 text-sm"
+                ref={nameRef}
+              />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="rant">Message box</Label>
+              <Label htmlFor="rant" className="text-gray-500 font-normal">
+                Message box
+              </Label>
             </div>
             <Textarea
               id="rant"
-              placeholder="Whether it is anger, frustration, joy, or sadness—speak from your heart"
+              placeholder=""
               ref={messageRef}
-              className="h-32"
+              className="h-32 text-sm "
             />
           </div>
         </CardContent>
         <CardFooter className="flex justify-between">
           <Button
-            variant="outline"
+            variant="default"
             // onClick={() => toast("Your rant has been uploaded!")}
-            className="w-full"
+            className="w-full hover:bg-orange-400 bg-orange-500 text-white"
           >
-            Show Toast
+            Upload Rant
           </Button>
         </CardFooter>
       </form>

@@ -27,7 +27,7 @@ export function NavBar() {
                 className="hover:text-orange-500"
               >
                 <Link to={link.href}>
-                  <NavigationMenuLink className="">
+                  <NavigationMenuLink className=" text-sm md:text-base hover:text-orange-500">
                     {link.label}
                   </NavigationMenuLink>
                 </Link>
